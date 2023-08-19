@@ -84,8 +84,8 @@ window.addEventListener('DOMContentLoaded', function () {
     countBtn.addEventListener('click', function () {
         if (checkStart()) { 
             appData.moneyPerDay = (appData.budget / 30 ).toFixed(1);
-            console.log(appData.moneyPerDay)
-            dayBudgetValue.textContent = appData.moneyPerDay.toFixed(1)+ 'UAH'
+
+            dayBudgetValue.textContent = appData.moneyPerDay+ 'UAH'
             if (appData.moneyPerDay < 100) {
                 levelValue.textContent = 'Минимальный уровень достатка'
             }   else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
